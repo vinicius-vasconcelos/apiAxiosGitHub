@@ -10,13 +10,9 @@ function search() {
             $('div.img').css('border', 'none');
             $('div.img').append(`<img src="${respText.data[0].owner.avatar_url}">`);
 
-            $('section.repositorios').html('');
+            $('section.repositorios .list').html('');
 
-            let str = `<h1 class="titulo">
-                            <i class="fas fa-folder-open"></i>
-                            Repositórios
-                        </h1>
-                        <hr>`;
+            let str = '';
 
             respText.data.forEach(element => {
                str += `
@@ -27,7 +23,7 @@ function search() {
                `;
             });
 
-            $('section.repositorios').append(str);
+            $('section.repositorios .list').append(str);
         })
         .catch(error => {
             $('#nome').text('Nenhum resultado encontrado');
@@ -46,3 +42,4 @@ function search() {
 
     event.preventDefault()
 }
+
