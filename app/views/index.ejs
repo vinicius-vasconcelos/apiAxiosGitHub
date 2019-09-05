@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>API GitHub</title>
+
+
+        <link href="https://fonts.googleapis.com/css?family=Manjari:100,400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/api.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+                <ul>
+                    <li>Search HUB</li>
+                    <li>
+                        <input type="text" id="inp-search" placeholder="Search..."> 
+                        <button onclick="search()"><i class="fas fa-search"></i></button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <section class="perfil">
+                <div class="img"></div>
+                <h1 id="nome" class="titulo">Nome</h1>
+            </section>
+            <section class="repositorios">
+                <h1 class="titulo"><i class="fas fa-folder-open"></i>Repositórios</h1>
+                <hr>
+                <div class="rep-item">
+                    <p class="titulo-card"> Repositório1</p>
+                    <p class="descricao">Uma breve descrição do que este repositório contém !!!</p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
