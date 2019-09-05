@@ -22,6 +22,7 @@ html, body {
     font-family: 'Manjari', sans-serif;
     background-color: #f3f3f3;
     color: #EEE;
+    overflow: hidden;
 }
 
 .container {
@@ -30,6 +31,7 @@ html, body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 hr {
@@ -61,7 +63,7 @@ nav ul {
 
 main {
     width: 100%;
-    max-height: 90vh;
+    height: 90vh;
     background-color: #16202c;
     border-radius: 5px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, .5);
@@ -76,10 +78,7 @@ main {
 i {margin-right: 10px;}
 
 .perfil {
-    flex: 1 1 600px;
-    min-height: 10vh;
-    height: auto;
-
+    flex: 1 1 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,11 +100,10 @@ i {margin-right: 10px;}
 }
 
 .repositorios {
-    flex: 1 1 600px;
-    min-height: 10vh;
-    height: auto;
+    flex: 1 1 300px;
     background-color: #192734;
     border-radius: 5px;
+    height: 90vh;
 
     display: flex;
     justify-content: center;
